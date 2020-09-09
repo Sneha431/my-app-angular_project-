@@ -1,0 +1,21 @@
+$bgcolor:yellow;
+@mixin active
+{
+    background-color:$bgcolor;
+    border:black;
+}
+.container{
+    span{
+       @include active;
+    }
+}
+.notactive
+{
+    background-color:lightgray;
+    border:black;
+}
+.active
+{
+    background-color:$bgcolor;
+    border:black;
+}
